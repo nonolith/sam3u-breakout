@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -683,6 +683,29 @@ package type OT</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
+<package name="USB-MICROB">
+<description>SMD USB Micro-B connector 
+&lt;br&gt;
+FCI P/N - 10118192-0001LF
+&lt;br&gt;
+DigiKey P/N - 609-4613-1-ND
+&lt;br&gt;
+Mouser P/N - 649-10118192-0001LF</description>
+<smd name="P3" x="0" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P4" x="0.65" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P5" x="1.3" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P2" x="-0.65" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P1" x="-1.3" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="PAD-LT" x="-3.1" y="2.55" dx="2.1" dy="1.6" layer="1"/>
+<smd name="PAD-RT" x="3.1" y="2.55" dx="2.1" dy="1.6" layer="1"/>
+<smd name="PAD-LB" x="-1.15" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="PAD-RB" x="1.15" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="PAD-RRB" x="3.8" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="PAD-LLB" x="-3.8" y="0" dx="1.8" dy="1.8" layer="1"/>
+<wire x1="-2.9" y1="-1.45" x2="0" y2="-1.45" width="0.4064" layer="21"/>
+<wire x1="0" y1="-1.45" x2="2.8" y2="-1.45" width="0.4064" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-1.45" width="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SAM3U_LQFP100">
@@ -1112,6 +1135,18 @@ Source: sam3u_lqfp100.csv</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MICROB" package="USB-MICROB">
+<connects>
+<connect gate="G$1" pin="D+" pad="P3"/>
+<connect gate="G$1" pin="D-" pad="P2"/>
+<connect gate="G$1" pin="GND" pad="P5"/>
+<connect gate="G$1" pin="ID" pad="P4"/>
+<connect gate="G$1" pin="VBUS" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1909,7 +1944,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C7" library="nonolith" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="C8" library="nonolith" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="U$3" library="nonolith" deviceset="GND" device=""/>
-<part name="CN1" library="nonolith" deviceset="USB" device="MINIB"/>
+<part name="CN1" library="nonolith" deviceset="USB" device="MICROB"/>
 <part name="R1" library="nonolith" deviceset="RESISTOR" device="0603" value="39"/>
 <part name="R2" library="nonolith" deviceset="RESISTOR" device="0603" value="39"/>
 <part name="R3" library="nonolith" deviceset="RESISTOR" device="0603" value="6.8k"/>
