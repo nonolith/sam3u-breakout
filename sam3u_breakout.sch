@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1927,10 +1927,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="C15" library="nonolith" deviceset="CAP_CERAMIC" device="0402"/>
 <part name="C17" library="nonolith" deviceset="CAP_CERAMIC" device="0402"/>
-<part name="U$10" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
-<part name="U$11" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
-<part name="U$12" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
-<part name="U$13" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
+<part name="HEADER1" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
+<part name="HEADER2" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
+<part name="HEADER4" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
+<part name="HEADER3" library="SparkFun-Connectors" deviceset="M19" device="1X19_NO_SILK"/>
 <part name="U$14" library="nonolith" deviceset="VREF" device=""/>
 </parts>
 <sheets>
@@ -1968,10 +1968,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="C14" gate="G$1" x="48.26" y="119.38"/>
 <instance part="C15" gate="G$1" x="53.34" y="119.38"/>
 <instance part="C17" gate="G$1" x="129.54" y="38.1"/>
-<instance part="U$10" gate="G$1" x="120.65" y="-26.67"/>
-<instance part="U$11" gate="G$1" x="107.95" y="-27.94"/>
-<instance part="U$12" gate="G$1" x="-71.12" y="15.24"/>
-<instance part="U$13" gate="G$1" x="-81.28" y="13.97"/>
+<instance part="HEADER1" gate="G$1" x="120.65" y="-26.67"/>
+<instance part="HEADER2" gate="G$1" x="107.95" y="-27.94"/>
+<instance part="HEADER4" gate="G$1" x="-71.12" y="15.24"/>
+<instance part="HEADER3" gate="G$1" x="-81.28" y="13.97"/>
 <instance part="U$14" gate="G$1" x="115.57" y="17.78"/>
 </instances>
 <busses>
@@ -2053,17 +2053,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="45.72" y1="121.92" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="19"/>
+<pinref part="HEADER1" gate="G$1" pin="19"/>
 <wire x1="130.81" y1="-3.81" x2="134.62" y2="-3.81" width="0.1524" layer="91"/>
 <label x="130.81" y="-3.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="19"/>
+<pinref part="HEADER4" gate="G$1" pin="19"/>
 <wire x1="-60.96" y1="38.1" x2="-55.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="-58.42" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="9"/>
+<pinref part="HEADER3" gate="G$1" pin="9"/>
 <wire x1="-71.12" y1="11.43" x2="-66.04" y2="11.43" width="0.1524" layer="91"/>
 <label x="-71.12" y="11.43" size="1.778" layer="95"/>
 </segment>
@@ -2072,17 +2072,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="105.41" y1="17.78" x2="100.33" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="1"/>
+<pinref part="HEADER4" gate="G$1" pin="1"/>
 <wire x1="-60.96" y1="-7.62" x2="-55.88" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-58.42" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="10"/>
+<pinref part="HEADER1" gate="G$1" pin="10"/>
 <wire x1="130.81" y1="-26.67" x2="135.89" y2="-26.67" width="0.1524" layer="91"/>
 <label x="132.08" y="-26.67" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="1"/>
+<pinref part="HEADER1" gate="G$1" pin="1"/>
 <wire x1="130.81" y1="-49.53" x2="133.35" y2="-49.53" width="0.1524" layer="91"/>
 <label x="130.81" y="-49.53" size="1.778" layer="95"/>
 </segment>
@@ -2162,12 +2162,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="125.73" y1="15.24" x2="132.08" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="1"/>
+<pinref part="HEADER3" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="-8.89" x2="-68.58" y2="-8.89" width="0.1524" layer="91"/>
 <label x="-71.12" y="-8.89" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="10"/>
+<pinref part="HEADER2" gate="G$1" pin="10"/>
 <wire x1="118.11" y1="-27.94" x2="121.92" y2="-27.94" width="0.1524" layer="91"/>
 <label x="118.11" y="-27.94" size="1.778" layer="95"/>
 </segment>
@@ -2243,7 +2243,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="99.06" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="1"/>
+<pinref part="HEADER2" gate="G$1" pin="1"/>
 <wire x1="118.11" y1="-50.8" x2="120.65" y2="-50.8" width="0.1524" layer="91"/>
 <label x="116.84" y="-50.8" size="1.778" layer="95"/>
 </segment>
@@ -2254,7 +2254,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="10"/>
+<pinref part="HEADER3" gate="G$1" pin="10"/>
 <wire x1="-71.12" y1="13.97" x2="-66.04" y2="13.97" width="0.1524" layer="91"/>
 <label x="-71.12" y="13.97" size="1.778" layer="95"/>
 </segment>
@@ -2265,7 +2265,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="10"/>
+<pinref part="HEADER4" gate="G$1" pin="10"/>
 <wire x1="-60.96" y1="15.24" x2="-55.88" y2="15.24" width="0.1524" layer="91"/>
 <label x="-58.42" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -2276,7 +2276,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="11"/>
+<pinref part="HEADER3" gate="G$1" pin="11"/>
 <wire x1="-71.12" y1="16.51" x2="-66.04" y2="16.51" width="0.1524" layer="91"/>
 <label x="-71.12" y="16.51" size="1.778" layer="95"/>
 </segment>
@@ -2287,7 +2287,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="11"/>
+<pinref part="HEADER4" gate="G$1" pin="11"/>
 <wire x1="-60.96" y1="17.78" x2="-55.88" y2="17.78" width="0.1524" layer="91"/>
 <label x="-58.42" y="17.78" size="1.778" layer="95"/>
 </segment>
@@ -2298,7 +2298,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="78.74" x2="3.81" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="12"/>
+<pinref part="HEADER3" gate="G$1" pin="12"/>
 <wire x1="-71.12" y1="19.05" x2="-66.04" y2="19.05" width="0.1524" layer="91"/>
 <label x="-71.12" y="19.05" size="1.778" layer="95"/>
 </segment>
@@ -2309,7 +2309,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="12"/>
+<pinref part="HEADER4" gate="G$1" pin="12"/>
 <wire x1="-60.96" y1="20.32" x2="-55.88" y2="20.32" width="0.1524" layer="91"/>
 <label x="-58.42" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -2321,7 +2321,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <label x="-71.12" y="21.59" size="1.778" layer="95"/>
-<pinref part="U$13" gate="G$1" pin="13"/>
+<pinref part="HEADER3" gate="G$1" pin="13"/>
 <wire x1="-71.12" y1="21.59" x2="-66.04" y2="21.59" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2331,7 +2331,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="13"/>
+<pinref part="HEADER4" gate="G$1" pin="13"/>
 <wire x1="-60.96" y1="22.86" x2="-55.88" y2="22.86" width="0.1524" layer="91"/>
 <label x="-58.42" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -2342,7 +2342,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="68.58" x2="3.81" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="14"/>
+<pinref part="HEADER3" gate="G$1" pin="14"/>
 <wire x1="-71.12" y1="24.13" x2="-62.23" y2="24.13" width="0.1524" layer="91"/>
 <label x="-71.12" y="24.13" size="1.778" layer="95"/>
 </segment>
@@ -2353,7 +2353,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="14"/>
+<pinref part="HEADER4" gate="G$1" pin="14"/>
 <wire x1="-60.96" y1="25.4" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="-58.42" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -2364,7 +2364,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="15"/>
+<pinref part="HEADER3" gate="G$1" pin="15"/>
 <wire x1="-71.12" y1="26.67" x2="-66.04" y2="26.67" width="0.1524" layer="91"/>
 <label x="-71.12" y="26.67" size="1.778" layer="95"/>
 </segment>
@@ -2375,7 +2375,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="60.96" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="15"/>
+<pinref part="HEADER4" gate="G$1" pin="15"/>
 <wire x1="-60.96" y1="27.94" x2="-55.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="-58.42" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -2386,7 +2386,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="58.42" x2="5.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="16"/>
+<pinref part="HEADER3" gate="G$1" pin="16"/>
 <wire x1="-71.12" y1="29.21" x2="-66.04" y2="29.21" width="0.1524" layer="91"/>
 <label x="-71.12" y="29.21" size="1.778" layer="95"/>
 </segment>
@@ -2397,7 +2397,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="55.88" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="16"/>
+<pinref part="HEADER4" gate="G$1" pin="16"/>
 <wire x1="-60.96" y1="30.48" x2="-55.88" y2="30.48" width="0.1524" layer="91"/>
 <label x="-58.42" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -2408,7 +2408,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="17"/>
+<pinref part="HEADER3" gate="G$1" pin="17"/>
 <wire x1="-71.12" y1="31.75" x2="-66.04" y2="31.75" width="0.1524" layer="91"/>
 <label x="-71.12" y="31.75" size="1.778" layer="95"/>
 </segment>
@@ -2419,7 +2419,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="18"/>
+<pinref part="HEADER3" gate="G$1" pin="18"/>
 <wire x1="-71.12" y1="34.29" x2="-66.04" y2="34.29" width="0.1524" layer="91"/>
 <label x="-72.39" y="34.29" size="1.778" layer="95"/>
 </segment>
@@ -2430,7 +2430,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="18"/>
+<pinref part="HEADER4" gate="G$1" pin="18"/>
 <wire x1="-60.96" y1="35.56" x2="-55.88" y2="35.56" width="0.1524" layer="91"/>
 <label x="-58.42" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -2441,7 +2441,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="43.18" x2="5.08" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="19"/>
+<pinref part="HEADER3" gate="G$1" pin="19"/>
 <wire x1="-71.12" y1="36.83" x2="-66.04" y2="36.83" width="0.1524" layer="91"/>
 <label x="-72.39" y="36.83" size="1.778" layer="95"/>
 </segment>
@@ -2452,7 +2452,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="19"/>
+<pinref part="HEADER2" gate="G$1" pin="19"/>
 <wire x1="118.11" y1="-5.08" x2="120.65" y2="-5.08" width="0.1524" layer="91"/>
 <label x="116.84" y="-5.08" size="1.778" layer="95"/>
 </segment>
@@ -2463,7 +2463,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="38.1" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="18"/>
+<pinref part="HEADER1" gate="G$1" pin="18"/>
 <wire x1="130.81" y1="-6.35" x2="134.62" y2="-6.35" width="0.1524" layer="91"/>
 <label x="130.81" y="-6.35" size="1.778" layer="95"/>
 </segment>
@@ -2474,7 +2474,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="18"/>
+<pinref part="HEADER2" gate="G$1" pin="18"/>
 <wire x1="118.11" y1="-7.62" x2="120.65" y2="-7.62" width="0.1524" layer="91"/>
 <label x="116.84" y="-7.62" size="1.778" layer="95"/>
 </segment>
@@ -2485,7 +2485,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="17"/>
+<pinref part="HEADER1" gate="G$1" pin="17"/>
 <wire x1="130.81" y1="-8.89" x2="134.62" y2="-8.89" width="0.1524" layer="91"/>
 <label x="130.81" y="-8.89" size="1.778" layer="95"/>
 </segment>
@@ -2496,7 +2496,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="30.48" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="17"/>
+<pinref part="HEADER2" gate="G$1" pin="17"/>
 <wire x1="118.11" y1="-10.16" x2="120.65" y2="-10.16" width="0.1524" layer="91"/>
 <label x="116.84" y="-10.16" size="1.778" layer="95"/>
 </segment>
@@ -2507,7 +2507,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="16"/>
+<pinref part="HEADER1" gate="G$1" pin="16"/>
 <wire x1="130.81" y1="-11.43" x2="134.62" y2="-11.43" width="0.1524" layer="91"/>
 <label x="130.81" y="-11.43" size="1.778" layer="95"/>
 </segment>
@@ -2518,7 +2518,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="17"/>
+<pinref part="HEADER4" gate="G$1" pin="17"/>
 <wire x1="-60.96" y1="33.02" x2="-55.88" y2="33.02" width="0.1524" layer="91"/>
 <label x="-58.42" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -2532,7 +2532,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="5.08" y1="96.52" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="9"/>
+<pinref part="HEADER4" gate="G$1" pin="9"/>
 <wire x1="-60.96" y1="12.7" x2="-55.88" y2="12.7" width="0.1524" layer="91"/>
 <label x="-58.42" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -2547,7 +2547,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="8"/>
+<pinref part="HEADER4" gate="G$1" pin="8"/>
 <wire x1="-60.96" y1="10.16" x2="-55.88" y2="10.16" width="0.1524" layer="91"/>
 <label x="-58.42" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -2558,7 +2558,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="8"/>
+<pinref part="HEADER3" gate="G$1" pin="8"/>
 <wire x1="-71.12" y1="8.89" x2="-66.04" y2="8.89" width="0.1524" layer="91"/>
 <label x="-71.12" y="8.89" size="1.778" layer="95"/>
 </segment>
@@ -2571,7 +2571,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <wire x1="-60.96" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
 <label x="-58.42" y="7.62" size="1.778" layer="95"/>
-<pinref part="U$12" gate="G$1" pin="7"/>
+<pinref part="HEADER4" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="PB5" class="0">
@@ -2580,7 +2580,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="88.9" x2="77.47" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="7"/>
+<pinref part="HEADER3" gate="G$1" pin="7"/>
 <wire x1="-71.12" y1="6.35" x2="-67.31" y2="6.35" width="0.1524" layer="91"/>
 <label x="-71.12" y="6.35" size="1.778" layer="95"/>
 </segment>
@@ -2591,7 +2591,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="6"/>
+<pinref part="HEADER4" gate="G$1" pin="6"/>
 <wire x1="-60.96" y1="5.08" x2="-55.88" y2="5.08" width="0.1524" layer="91"/>
 <label x="-58.42" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -2602,7 +2602,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="83.82" x2="78.74" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="6"/>
+<pinref part="HEADER3" gate="G$1" pin="6"/>
 <wire x1="-71.12" y1="3.81" x2="-67.31" y2="3.81" width="0.1524" layer="91"/>
 <label x="-71.12" y="3.81" size="1.778" layer="95"/>
 </segment>
@@ -2613,7 +2613,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="81.28" x2="77.47" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="5"/>
+<pinref part="HEADER4" gate="G$1" pin="5"/>
 <wire x1="-60.96" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
 <label x="-58.42" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -2624,7 +2624,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="5"/>
+<pinref part="HEADER3" gate="G$1" pin="5"/>
 <wire x1="-71.12" y1="1.27" x2="-67.31" y2="1.27" width="0.1524" layer="91"/>
 <label x="-71.12" y="1.27" size="1.778" layer="95"/>
 </segment>
@@ -2635,7 +2635,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="76.2" x2="76.2" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="4"/>
+<pinref part="HEADER4" gate="G$1" pin="4"/>
 <wire x1="-60.96" y1="0" x2="-55.88" y2="0" width="0.1524" layer="91"/>
 <label x="-58.42" y="0" size="1.778" layer="95"/>
 </segment>
@@ -2646,7 +2646,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="4"/>
+<pinref part="HEADER3" gate="G$1" pin="4"/>
 <wire x1="-71.12" y1="-1.27" x2="-68.58" y2="-1.27" width="0.1524" layer="91"/>
 <label x="-71.12" y="-1.27" size="1.778" layer="95"/>
 </segment>
@@ -2657,7 +2657,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="3"/>
+<pinref part="HEADER4" gate="G$1" pin="3"/>
 <wire x1="-60.96" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-58.42" y="-2.54" size="1.778" layer="95"/>
 </segment>
@@ -2668,7 +2668,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="3"/>
+<pinref part="HEADER3" gate="G$1" pin="3"/>
 <wire x1="-71.12" y1="-3.81" x2="-68.58" y2="-3.81" width="0.1524" layer="91"/>
 <label x="-71.12" y="-3.81" size="1.778" layer="95"/>
 </segment>
@@ -2679,7 +2679,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$12" gate="G$1" pin="2"/>
+<pinref part="HEADER4" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="-5.08" x2="-55.88" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-58.42" y="-5.08" size="1.778" layer="95"/>
 </segment>
@@ -2690,14 +2690,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="71.12" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="2"/>
+<pinref part="HEADER3" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-6.35" x2="-68.58" y2="-6.35" width="0.1524" layer="91"/>
 <label x="-71.12" y="-6.35" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA6" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="16"/>
+<pinref part="HEADER2" gate="G$1" pin="16"/>
 <wire x1="118.11" y1="-12.7" x2="120.65" y2="-12.7" width="0.1524" layer="91"/>
 <label x="116.84" y="-12.7" size="1.778" layer="95"/>
 </segment>
@@ -2708,7 +2708,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA8" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="15"/>
+<pinref part="HEADER2" gate="G$1" pin="15"/>
 <wire x1="118.11" y1="-15.24" x2="120.65" y2="-15.24" width="0.1524" layer="91"/>
 <label x="116.84" y="-15.24" size="1.778" layer="95"/>
 </segment>
@@ -2719,7 +2719,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA7" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="15"/>
+<pinref part="HEADER1" gate="G$1" pin="15"/>
 <wire x1="130.81" y1="-13.97" x2="134.62" y2="-13.97" width="0.1524" layer="91"/>
 <label x="130.81" y="-13.97" size="1.778" layer="95"/>
 </segment>
@@ -2730,7 +2730,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA10" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="14"/>
+<pinref part="HEADER2" gate="G$1" pin="14"/>
 <wire x1="118.11" y1="-17.78" x2="120.65" y2="-17.78" width="0.1524" layer="91"/>
 <label x="116.84" y="-17.78" size="1.778" layer="95"/>
 </segment>
@@ -2741,7 +2741,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA9" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="14"/>
+<pinref part="HEADER1" gate="G$1" pin="14"/>
 <wire x1="130.81" y1="-16.51" x2="134.62" y2="-16.51" width="0.1524" layer="91"/>
 <label x="130.81" y="-16.51" size="1.778" layer="95"/>
 </segment>
@@ -2752,7 +2752,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA12" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="13"/>
+<pinref part="HEADER2" gate="G$1" pin="13"/>
 <wire x1="118.11" y1="-20.32" x2="120.65" y2="-20.32" width="0.1524" layer="91"/>
 <label x="116.84" y="-20.32" size="1.778" layer="95"/>
 </segment>
@@ -2763,7 +2763,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="PA11" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="13"/>
+<pinref part="HEADER1" gate="G$1" pin="13"/>
 <wire x1="130.81" y1="-19.05" x2="135.89" y2="-19.05" width="0.1524" layer="91"/>
 <label x="130.81" y="-19.05" size="1.778" layer="95"/>
 </segment>
@@ -2779,7 +2779,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="9"/>
+<pinref part="HEADER1" gate="G$1" pin="9"/>
 <wire x1="130.81" y1="-29.21" x2="135.89" y2="-29.21" width="0.1524" layer="91"/>
 <label x="132.08" y="-29.21" size="1.778" layer="95"/>
 </segment>
@@ -2791,7 +2791,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="9"/>
+<pinref part="HEADER2" gate="G$1" pin="9"/>
 <wire x1="118.11" y1="-30.48" x2="121.92" y2="-30.48" width="0.1524" layer="91"/>
 <label x="118.11" y="-30.48" size="1.778" layer="95"/>
 </segment>
@@ -2803,7 +2803,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="8"/>
+<pinref part="HEADER1" gate="G$1" pin="8"/>
 <wire x1="130.81" y1="-31.75" x2="135.89" y2="-31.75" width="0.1524" layer="91"/>
 <label x="132.08" y="-31.75" size="1.778" layer="95"/>
 </segment>
@@ -2815,7 +2815,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="8"/>
+<pinref part="HEADER2" gate="G$1" pin="8"/>
 <wire x1="118.11" y1="-33.02" x2="120.65" y2="-33.02" width="0.1524" layer="91"/>
 <label x="116.84" y="-33.02" size="1.778" layer="95"/>
 </segment>
@@ -2827,7 +2827,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="7"/>
+<pinref part="HEADER1" gate="G$1" pin="7"/>
 <wire x1="130.81" y1="-34.29" x2="134.62" y2="-34.29" width="0.1524" layer="91"/>
 <label x="130.81" y="-34.29" size="1.778" layer="95"/>
 </segment>
@@ -2838,7 +2838,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="12"/>
+<pinref part="HEADER1" gate="G$1" pin="12"/>
 <wire x1="130.81" y1="-21.59" x2="135.89" y2="-21.59" width="0.1524" layer="91"/>
 <label x="130.81" y="-21.59" size="1.778" layer="95"/>
 </segment>
@@ -2849,7 +2849,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="12"/>
+<pinref part="HEADER2" gate="G$1" pin="12"/>
 <wire x1="118.11" y1="-22.86" x2="120.65" y2="-22.86" width="0.1524" layer="91"/>
 <label x="116.84" y="-22.86" size="1.778" layer="95"/>
 </segment>
@@ -2866,7 +2866,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="11"/>
+<pinref part="HEADER1" gate="G$1" pin="11"/>
 <wire x1="130.81" y1="-24.13" x2="134.62" y2="-24.13" width="0.1524" layer="91"/>
 <label x="130.81" y="-24.13" size="1.778" layer="95"/>
 </segment>
@@ -2877,7 +2877,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="11"/>
+<pinref part="HEADER2" gate="G$1" pin="11"/>
 <wire x1="118.11" y1="-25.4" x2="120.65" y2="-25.4" width="0.1524" layer="91"/>
 <label x="116.84" y="-25.4" size="1.778" layer="95"/>
 </segment>
@@ -2901,7 +2901,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="7"/>
+<pinref part="HEADER2" gate="G$1" pin="7"/>
 <wire x1="118.11" y1="-35.56" x2="120.65" y2="-35.56" width="0.1524" layer="91"/>
 <label x="116.84" y="-35.56" size="1.778" layer="95"/>
 </segment>
@@ -2913,7 +2913,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="6"/>
+<pinref part="HEADER1" gate="G$1" pin="6"/>
 <wire x1="130.81" y1="-36.83" x2="134.62" y2="-36.83" width="0.1524" layer="91"/>
 <label x="130.81" y="-36.83" size="1.778" layer="95"/>
 </segment>
@@ -2925,7 +2925,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="6"/>
+<pinref part="HEADER2" gate="G$1" pin="6"/>
 <wire x1="118.11" y1="-38.1" x2="120.65" y2="-38.1" width="0.1524" layer="91"/>
 <label x="116.84" y="-38.1" size="1.778" layer="95"/>
 </segment>
@@ -2937,7 +2937,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="73.66" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="5"/>
+<pinref part="HEADER1" gate="G$1" pin="5"/>
 <wire x1="130.81" y1="-39.37" x2="134.62" y2="-39.37" width="0.1524" layer="91"/>
 <label x="130.81" y="-39.37" size="1.778" layer="95"/>
 </segment>
@@ -2949,7 +2949,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="5"/>
+<pinref part="HEADER2" gate="G$1" pin="5"/>
 <wire x1="118.11" y1="-40.64" x2="120.65" y2="-40.64" width="0.1524" layer="91"/>
 <label x="116.84" y="-40.64" size="1.778" layer="95"/>
 </segment>
@@ -2961,7 +2961,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="4"/>
+<pinref part="HEADER1" gate="G$1" pin="4"/>
 <wire x1="130.81" y1="-41.91" x2="133.35" y2="-41.91" width="0.1524" layer="91"/>
 <label x="130.81" y="-41.91" size="1.778" layer="95"/>
 </segment>
@@ -2973,7 +2973,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="4"/>
+<pinref part="HEADER2" gate="G$1" pin="4"/>
 <wire x1="118.11" y1="-43.18" x2="120.65" y2="-43.18" width="0.1524" layer="91"/>
 <label x="116.84" y="-43.18" size="1.778" layer="95"/>
 </segment>
@@ -2985,7 +2985,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="3"/>
+<pinref part="HEADER1" gate="G$1" pin="3"/>
 <wire x1="130.81" y1="-44.45" x2="133.35" y2="-44.45" width="0.1524" layer="91"/>
 <label x="130.81" y="-44.45" size="1.778" layer="95"/>
 </segment>
@@ -2997,7 +2997,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="3"/>
+<pinref part="HEADER2" gate="G$1" pin="3"/>
 <wire x1="118.11" y1="-45.72" x2="120.65" y2="-45.72" width="0.1524" layer="91"/>
 <label x="118.11" y="-45.72" size="1.778" layer="95"/>
 </segment>
@@ -3009,7 +3009,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="2"/>
+<pinref part="HEADER1" gate="G$1" pin="2"/>
 <wire x1="130.81" y1="-46.99" x2="133.35" y2="-46.99" width="0.1524" layer="91"/>
 <label x="130.81" y="-46.99" size="1.778" layer="95"/>
 </segment>
@@ -3021,7 +3021,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="72.39" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="2"/>
+<pinref part="HEADER2" gate="G$1" pin="2"/>
 <wire x1="118.11" y1="-48.26" x2="120.65" y2="-48.26" width="0.1524" layer="91"/>
 <label x="116.84" y="-48.26" size="1.778" layer="95"/>
 </segment>
