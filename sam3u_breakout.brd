@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -773,7 +773,7 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMinStopFrame" value="20mil"/>
 <param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
@@ -935,7 +935,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.907" y="20.447" size="0.8128" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="Y1" library="nonolith" package="HC49UP" value="" x="9.667084375" y="33.22615625" smashed="yes" rot="R315">
-<attribute name="NAME" x="7.601625" y="40.131925" size="0.9144" layer="25" font="vector" ratio="10" rot="R315"/>
+<attribute name="NAME" x="7.601625" y="39.242925" size="0.9144" layer="25" font="vector" ratio="10" rot="R315"/>
 <attribute name="VALUE" x="2.662484375" y="34.303784375" size="1.27" layer="27" ratio="10" rot="R315"/>
 </element>
 <element name="C9" library="nonolith" package="0402" value="" x="16.764" y="26.67" smashed="yes" rot="R315">
@@ -1081,7 +1081,7 @@ design rules under a new name.</description>
 <via x="16.129" y="17.018" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="13.081" y="15.748" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="14.859" y="15.748" extent="1-16" drill="0.3302" shape="octagon"/>
-<via x="16.129" y="17.018" extent="1-16" drill="0.3302" shape="octagon"/>
+<via x="13.081" y="19.939" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="19.558" y="16.51" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="38.862" y="34.798" extent="1-16" drill="0.3302" shape="octagon"/>
 <via x="30.48" y="32.512" extent="1-16" drill="0.3302" shape="octagon"/>
@@ -1344,9 +1344,9 @@ design rules under a new name.</description>
 <wire x1="20.32" y1="24.511" x2="20.066" y2="24.765" width="0.254" layer="1"/>
 <wire x1="14.986" y1="24.765" x2="14.948" y2="24.803" width="0.254" layer="1"/>
 <wire x1="14.947" y1="24.892" x2="14.986" y2="24.853" width="0.254" layer="1"/>
-<wire x1="14.986" y1="24.765" x2="9.525" y2="24.765" width="0.254" layer="1"/>
-<wire x1="9.525" y1="24.765" x2="9.163" y2="24.403" width="0.254" layer="1"/>
-<wire x1="9.163" y1="24.403" x2="7.739" y2="24.276" width="0.254" layer="1"/>
+<wire x1="14.986" y1="24.765" x2="9.398" y2="24.765" width="0.254" layer="1"/>
+<wire x1="9.398" y1="24.765" x2="8.909" y2="24.276" width="0.254" layer="1"/>
+<wire x1="8.909" y1="24.276" x2="7.739" y2="24.276" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="76"/>
@@ -1357,9 +1357,9 @@ design rules under a new name.</description>
 <wire x1="18.33871875" y1="22.733" x2="17.78" y2="22.733" width="0.254" layer="1"/>
 <wire x1="17.78" y1="22.733" x2="16.51" y2="24.003" width="0.254" layer="1"/>
 <wire x1="19.37128125" y1="23.7655625" x2="18.33871875" y2="22.733" width="0.254" layer="1"/>
-<wire x1="7.739" y1="23.476" x2="9.252" y2="23.603" width="0.254" layer="1"/>
-<wire x1="9.252" y1="23.603" x2="9.652" y2="24.003" width="0.254" layer="1"/>
-<wire x1="9.652" y1="24.003" x2="12.7" y2="24.003" width="0.254" layer="1"/>
+<wire x1="7.739" y1="23.476" x2="8.998" y2="23.476" width="0.254" layer="1"/>
+<wire x1="8.998" y1="23.476" x2="9.525" y2="24.003" width="0.254" layer="1"/>
+<wire x1="9.525" y1="24.003" x2="12.7" y2="24.003" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="IC1" pad="78"/>
@@ -1815,8 +1815,8 @@ design rules under a new name.</description>
 <signal name="PA6">
 <contactref element="HEADER2" pad="16"/>
 <contactref element="IC1" pad="32"/>
-<wire x1="36.695396875" y1="28.36175625" x2="40.513" y2="32.560359375" width="0.2032" layer="1"/>
-<wire x1="40.513" y1="32.560359375" x2="40.64" y2="44.412" width="0.2032" layer="1"/>
+<wire x1="36.695396875" y1="28.36175625" x2="40.64" y2="32.306359375" width="0.2032" layer="1"/>
+<wire x1="40.64" y1="32.306359375" x2="40.64" y2="44.412" width="0.2032" layer="1"/>
 </signal>
 <signal name="PA8">
 <contactref element="HEADER2" pad="15"/>
@@ -2101,6 +2101,12 @@ design rules under a new name.</description>
 <wire x1="5.08" y1="43.942" x2="5.08" y2="44.412" width="0.2032" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="7,39,a55a93cbc1e42f22"/>
+<approved hash="7,39,ccd2305e8c44ffe7"/>
+<approved hash="7,39,8c25dd5c9dd24ba8"/>
+<approved hash="7,39,667d5823cee0f031"/>
+</errors>
 </board>
 </drawing>
 </eagle>
